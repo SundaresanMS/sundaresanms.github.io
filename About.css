@@ -1,5 +1,5 @@
 .u-section-1 {
-  background-image: url("images/aboutsection2.PNG");
+  background-image: url("images/version10.PNG");
   background-position: 50% 50%;
 }
 
@@ -65,17 +65,6 @@
 
 .u-section-2 .u-text-2 {
   margin: 19px 0 0;
-}
-
-.u-section-2 .u-btn-1 {
-  border-style: solid;
-  text-transform: uppercase;
-  font-size: 0.9375rem;
-  letter-spacing: 2px;
-  font-weight: 800;
-  background-image: none;
-  margin: 19px auto 0;
-  padding: 0 12px;
 }
 
 .u-section-2 .u-image-1 {
@@ -144,12 +133,29 @@
 }
 
 @media (max-width: 575px) {
-  .u-section-2 .u-btn-1 {
-    padding: 10px 8px 10px 7px;
+  .u-section-2 {
+    min-height: auto;
+  }
+
+  .u-section-2 .u-sheet-1 {
+    min-height: 695px;
+  }
+
+  .u-section-2 .u-layout-wrap-1 {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .u-section-2 .u-layout-cell-1 {
+    min-height: 326px;
+  }
+
+  .u-section-2 .u-icon-1 {
+    margin-top: 9px;
   }
 
   .u-section-2 .u-image-1 {
-    min-height: 337px;
+    min-height: 279px;
   }
 }.u-section-3 {
   background-image: none;
