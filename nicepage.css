@@ -36069,30 +36069,31 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-menu-1 {
-    margin-top: 24px;
-    margin-right: calc(((100% - 540px) / 2) + -34px);
+    margin-top: 20px;
+    margin-right: calc(((100% - 540px) / 2) + -24px);
   }
 
   .u-header .u-image-1 {
     width: 266px;
     height: 76px;
-    margin-top: -60px;
+    margin-top: -42px;
     margin-left: auto;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 }
 @media (max-width: 575px) {
   .u-header {
-    min-height: 99px;
+    min-height: 103px;
   }
 
   .u-header .u-menu-1 {
-    margin-top: 28px;
-    margin-right: calc(((100% - 340px) / 2) + -34px);
+    margin-top: 29px;
+    margin-right: calc(((100% - 340px) / 2) + -52px);
   }
 
   .u-header .u-image-1 {
-    margin-top: -56px;
+    margin-top: -43px;
+    margin-bottom: 12px;
   }
 }
 .u-footer {
