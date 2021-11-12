@@ -39,24 +39,6 @@ $form = array(
     'required' => 'Field \'Message\' is required.'
     )
     ),
-    'radiobutton' => array(
-    'order' => 4,
-    'type' => 'string',
-    'label' => 'radiobutton',
-    'required' => false,
-    'errors' => array(
-    'required' => 'Field \'radiobutton\' is required.'
-    )
-    ),
-    'radiobutton' => array(
-    'order' => 5,
-    'type' => 'string',
-    'label' => 'radiobutton',
-    'required' => false,
-    'errors' => array(
-    'required' => 'Field \'radiobutton\' is required.'
-    )
-    ),
     )
     );
 
