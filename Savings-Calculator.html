@@ -6,18 +6,19 @@
     <meta name="keywords" content="Sample Long Headline To Change With Your Text">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    
+    <title>Savings Calculator</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Savings-Calculator.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.28.7, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link href="https://unpkg.com/survey-jquery@1.8.77/modern.css" type="text/css" rel="stylesheet" />
-    <script src="https://unpkg.com/survey-jquery@1.8.77/survey.jquery.min.js"></script>
-
     
-
+    <script src="https://unpkg.com/jquery"></script>
+        <script src="https://unpkg.com/survey-jquery@1.8.77/survey.jquery.min.js"></script>
+        <link href="https://unpkg.com/survey-core@1.8.77/modern.min.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./index.css">
+    
     
     
     
@@ -48,7 +49,7 @@
           <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Savings-Calculator.html" style="padding: 10px 20px;">Savings Calculator</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html#carousel_62d3" data-page-id="2794318970" style="padding: 10px 12px 10px 20px;">Contact</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html#carousel_62d3" data-page-id="2794318970" style="padding: 10px 20px;">Contact</a>
 </li></ul>
         </div>
         <div class="u-custom-menu u-nav-container-collapse">
@@ -67,23 +68,67 @@
       </nav><a href="Home.html" data-page-id="2794318970" class="u-align-center-sm u-align-center-xs u-image u-image-default u-logo u-image-1" data-image-width="331" data-image-height="95" title="Home">
         <img src="images/captiveenergy21.png" class="u-logo-image u-logo-image-1">
       </a></header>
-    <section class="u-clearfix u-image u-image-contain u-section-1" id="sec-f2e4" data-image-width="1304" data-image-height="648">
+    <section class="u-clearfix u-image u-image-contain u-section-1" id="sec-f2e4" data-image-width="1677" data-image-height="840">
       <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1"></div>
     </section>
     <section class="u-clearfix u-section-2" id="sec-3e9d">
-      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-sheet-1">
-                
-          <iframe frameborder="0"
-             noresize="noresize"
-             style="position: absolute; background: transparent; width: 100%; height:100%;"
-             src="solar_calculator.html"
-             frameborder="0">
-            </iframe>
-        
-
+      <div class="u-align-left u-clearfix u-sheet u-valign-middle-md u-valign-middle-xs u-sheet-1">
+        <div class="u-clearfix u-expanded-width-sm u-expanded-width-xs u-gutter-6 u-layout-wrap u-white u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-white u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <img class="u-image u-image-default u-image-1" src="images/kisspng-solar-power-solar-energy-rooftop-photovoltaic-powe-solar-rooftop-5b4de8aa31aa82.38300232153183249020351.png" alt="" data-image-width="540" data-image-height="470">
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-layout-cell u-radius-50 u-size-30 u-white u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2" id ="surveyResult">
+                  <h1 class="u-text u-text-1">Savings Calculator</h1>
+                  <h6 class="u-text u-text-2">Know your recommended system size.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    
+
+    <section class="u-clearfix u-section-3" id="sec-353a">
+      <div class="u-clearfix u-sheet u-sheet-1" id="surveyElement"></div>
+      <script type="text/javascript" src="./solar_calculator.js"></script>
+    </section>
+
+    <section class="u-align-center u-clearfix u-section-4" id="sec-3d0f">
+      <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/CopyofCalculateSavings24.png" alt=""></span>
+                <h5 class="u-align-center u-text u-text-1">Monthly Savings</h5>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/CopyofCopyofCalculateSavings21.png" alt=""></span>
+                <h5 class="u-align-center u-text u-text-2">Annual Energy Generation</h5>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/lifetimesavings3.PNG" alt=""></span>
+                <h5 class="u-align-center u-text u-text-3">Lifetime Savings</h5>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
+              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="images/CopyofCalculateSavings3.png" alt=""></span>
+                <h5 class="u-align-center u-text u-text-4">Equivalent number of trees planted</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-da5c">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8d29"><div class="u-clearfix u-sheet u-sheet-1">
