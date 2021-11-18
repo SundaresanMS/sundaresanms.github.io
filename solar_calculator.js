@@ -100,9 +100,9 @@ survey
         possible_system_size = Math.round(Math.min(ideal_systemsize,rooftop_system_size))
 
 1
-    document.getElementById('surveyResult').innerHTML =  "<h2 class='u-custom-font u-text u-text-default u-text-font u-text-1' id='surveyResult'>Recommended System = "+ (String(possible_system_size))+"KW. </h2>"
+    document.getElementById('surveyResult').innerHTML =  "<h2 class='u-custom-font u-text u-text-default u-text-font u-text-1' id='surveyResult' style='background-color:#FFEF5F;'>Recommended System = "+ (String(possible_system_size))+"KW. </h2>"
 
-    document.getElementById('sec-353a').innerHTML = "<div></div>"
+    document.getElementById('sec-3e9d').innerHTML = "<div></div>"
 
 });
 
