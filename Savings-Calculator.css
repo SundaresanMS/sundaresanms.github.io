@@ -24,18 +24,19 @@
     min-height: 234px;
   }
 }.u-section-2 .u-sheet-1 {
-  min-height: 207px;
+  min-height: 232px;
 }
 
 .u-section-2 .u-text-1 {
-  font-weight: 900;
-  margin: 77px 324px 0 364px;
+  font-weight: 700;
+  width: 412px;
+  margin: 78px auto 0;
 }
 
 .u-section-2 .u-text-2 {
   font-weight: normal;
-  width: 391px;
-  margin: 10px auto 46px;
+  width: 396px;
+  margin: 16px auto 60px;
 }
 
 @media (max-width: 1199px) {
@@ -44,20 +45,26 @@
   }
 
   .u-section-2 .u-text-1 {
-    width: 454px;
-    margin-top: 69px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 404px;
+    margin-top: 70px;
   }
 
   .u-section-2 .u-text-2 {
-    margin-bottom: 38px;
+    width: 404px;
+    margin-top: 14px;
+    margin-bottom: 35px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-2 .u-text-1 {
-    width: 452px;
+    width: 408px;
+  }
+
+  .u-section-2 .u-text-2 {
+    width: 408px;
+    margin-top: 13px;
+    margin-bottom: 60px;
   }
 }
 
@@ -67,14 +74,15 @@
   }
 
   .u-section-2 .u-text-1 {
-    width: auto;
+    width: 407px;
     margin-top: 30px;
-    margin-left: 43px;
   }
 
   .u-section-2 .u-text-2 {
-    margin-top: 8px;
-    margin-bottom: 29px;
+    width: auto;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    margin-left: 67px;
   }
 }
 
@@ -84,14 +92,13 @@
   }
 
   .u-section-2 .u-text-1 {
-    margin-top: 39px;
-    margin-left: 19px;
-    margin-right: 19px;
+    width: 249px;
+    margin-top: 43px;
   }
 
   .u-section-2 .u-text-2 {
-    width: auto;
-    margin: 9px 0 60px;
+    width: 256px;
+    margin: 15px auto 60px;
   }
 }.u-section-3 .u-sheet-1 {
   min-height: 431px;
@@ -152,7 +159,8 @@
 }
 
 .u-section-4 .u-text-1 {
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 1.875rem;
   margin: 89px 19px 0;
 }
 
@@ -258,9 +266,22 @@
     min-height: 159px;
   }
 
+  .u-section-4 .u-layout-cell-2 {
+    min-height: 183px;
+  }
+
+  .u-section-4 .u-container-layout-2 {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .u-section-4 .u-text-1 {
+    margin-top: 11px;
+    font-size: 1.5rem;
+  }
+
   .u-section-4 .u-text-2 {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 30px 0 -11px;
   }
 }.u-section-5 .u-sheet-1 {
   min-height: 332px;
