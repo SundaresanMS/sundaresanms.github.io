@@ -14,7 +14,7 @@ if (el) {
 
 
 
-var json =  {"pages":[{"name":"page1","elements":[{"type":"text","name":"name","title":"Name/Business Name","isRequired":true,"placeHolder":" "},{"type":"boolean","name":"building_type","title":"Type of Building","isRequired":true,"labelTrue":"Residential\n","labelFalse":"Commercial","valueTrue":"Residential","valueFalse":"MSME/Commercial"},{"type":"text","name":"whatsapp_num","title":"Whatsapp Number","isRequired":true,"placeHolder":" "},{"type":"text","name":"electricity_bill","title":"Monthly Electricity Bill","isRequired":true,"placeHolder":" "},{"type":"text","name":"rooftop_area","title":"Rooftop Area","isRequired":true},{"type":"text","name":"question1","title":"Address","isRequired":true}],"title":""}]}
+var json =  {"pages":[{"name":"page1","elements":[{"type":"text","name":"name","title":"Name/Business Name","isRequired":true,"placeHolder":" "},{"type":"boolean","name":"building_type","title":"Type of Building","isRequired":true,"labelTrue":"Residential\n","labelFalse":"Business","valueTrue":"Residential","valueFalse":"MSME/Commercial"},{"type":"text","name":"whatsapp_num","title":"Whatsapp Number","isRequired":true,"placeHolder":" "},{"type":"text","name":"electricity_bill","title":"Monthly Electricity Bill","isRequired":true,"placeHolder":" "},{"type":"text","name":"rooftop_area","title":"Rooftop Area","isRequired":true},{"type":"text","name":"question1","title":"Address","isRequired":true}],"title":""}]}
 
 function getLocationConstant() {
     if (navigator.geolocation) {
@@ -100,9 +100,33 @@ survey
         possible_system_size = Math.round(Math.min(ideal_systemsize,rooftop_system_size))
 
 1
-    document.getElementById('surveyResult').innerHTML =  "<h3 class='u-custom-font u-text u-text-default u-text-font u-text-1' id='surveyResult' style='background-color:#FFEF5F;'>Recommended System = "+ (String(possible_system_size))+"KW. </h3>"
+    document.getElementById('surveyResult').innerHTML =  "<h3 class='u-custom-font u-text u-text-default u-text-font u-text-1' id='surveyResult' style='background-color:#FFEF5F;text-align:center;'>Recommended System = "+ (String(possible_system_size))+"KW. </h3>"
+
+    monthlysavings = possible_system_size*1000
+
+    monthlysavings = monthlysavings.toLocaleString('en-IN', {style: 'currency',currency: 'INR', minimumFractionDigits: 0})
+
+
+    annualenergygen = possible_system_size*1650
+    equivalenttrees = annualenergygen/10
+
+    annualenergygen = annualenergygen.toLocaleString("en-US")
+    
+    lifetimesavings = possible_system_size*1000 *12*25
+
+    lifetimesavings = lifetimesavings.toLocaleString('en-IN', {style: 'currency',currency: 'INR', minimumFractionDigits: 0})
+    
+
+    
+    equivalenttrees = equivalenttrees.toLocaleString("en-US")
+
 
     document.getElementById('sec-3e9d').innerHTML = "<div></div>"
+
+    document.getElementById('monthlysavingsid').innerHTML = "<h2>"+(String(monthlysavings))+"/-</h2>"
+    document.getElementById('annualenergygenid').innerHTML = "<h2>"+(String(annualenergygen))+"KW</h2>"
+    document.getElementById('lifetimesavingsid').innerHTML = "<h2>"+(String(lifetimesavings))+"/-</h2>"
+    document.getElementById('equivalent-trees').innerHTML = "<h2>"+(String(equivalenttrees))+"</h2>"
 
 });
 
