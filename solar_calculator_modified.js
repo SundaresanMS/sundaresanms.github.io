@@ -43,14 +43,14 @@ var json = {
         {
           type: "text",
           name: "electricity_bill",
-          title: "Monthly Electricity Bill (₹)",
+          title: "Monthly Electricity Bill",
           isRequired: true,
           placeHolder: " ",
         },
         {
           type: "text",
           name: "rooftop_area",
-          title: "Rooftop Area (in Sq.Ft)",
+          title: "Rooftop Area",
           isRequired: true,
         },
         { type: "text", name: "address", title: "Address", isRequired: false },
@@ -176,13 +176,13 @@ survey.onComplete.add(function (sender) {
   document.getElementById("sec-3e9d").innerHTML = "<div></div>";
 
   document.getElementById("monthlysavingsid").innerHTML =
-    "<h2 style ='font-weight:800'>" + String(monthlysavings) + "</h2>";
+    "<h2>" + String(monthlysavings) + "/-</h2>";
   document.getElementById("annualenergygenid").innerHTML =
-    "<h2 style ='font-weight:800'>" + String(annualenergygen) + " kWh</h2>";
+    "<h2>" + String(annualenergygen) + " KW</h2>";
   document.getElementById("lifetimesavingsid").innerHTML =
-    "<h2 style='font-weight:800'>" + String(lifetimesavings) + "</h2>";
+    "<h2>" + String(lifetimesavings) + "/-</h2>";
   document.getElementById("equivalent-trees").innerHTML =
-    "<h2 style='font-weight:800'>" + String(equivalenttrees) + "</h2>";
+    "<h2>" + String(equivalenttrees) + "</h2>";
 });
 
 
@@ -191,7 +191,7 @@ survey.onComplete.add(function (sender) {
 
 
 
-navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
+// navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
 // new_data['location']  
 // console.log(document.getElementById("sq_105i").value)
 
