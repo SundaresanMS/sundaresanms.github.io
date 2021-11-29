@@ -97,6 +97,25 @@
 
   </style>
 
+<style>
+
+  .map-responsive{
+      overflow:hidden;
+      padding-bottom:75%;
+      position:relative;
+      height:0;
+  }
+  .map-responsive iframe{
+      left:0;
+      top:0;
+      height:100% !important;
+      width:100% !important;
+      position:absolute;
+  }
+  
+    </style>
+  
+
   </head>
   <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-5aad"><nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
         <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -114,7 +133,7 @@
         <div class="u-custom-menu u-nav-container">
           <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Savings-Calculator.html" style="padding: 10px 20px;">Savings Calculator</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Savings-Calculator.html" style="padding: 10px 20px;">Get a Quote</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html#carousel_62d3" data-page-id="2794318970" style="padding: 10px 20px;">Contact</a>
 </li></ul>
         </div>
@@ -124,7 +143,7 @@
               <div class="u-menu-close"></div>
               <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html" style="padding: 10px 20px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Savings-Calculator.html" style="padding: 10px 20px;">Savings Calculator</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Savings-Calculator.html" style="padding: 10px 20px;">Get a Quote</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html#carousel_62d3" data-page-id="2794318970" style="padding: 10px 20px;">Contact</a>
 </li></ul>
             </div>
@@ -147,6 +166,15 @@
     <section class="u-clearfix u-custom-color-5 u-section-3" id="sec-3e9d">
       <div class="u-align-left u-clearfix u-sheet u-valign-middle-md u-valign-middle-xs u-sheet-1" id="surveyElement"></div>
       <script type="text/javascript" src="./solar_calculator.js"></script>
+      <script>
+      
+        const ele = document.querySelector('.sv-row:last-child').querySelector('.sv-question__content')
+        ele.innerHTML = '<div class="map-responsive"><iframe src="map.html" width="600" height="950" frameborder="0" style="border:0" allowfullscreen></iframe></div>';       
+                          
+ 
+      
+      </script>
+
     </section>
     <section class="u-clearfix u-section-4" id="sec-7d5f">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
