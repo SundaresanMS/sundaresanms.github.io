@@ -1,0 +1,19 @@
+Plot 1
+Date Range 
+1/1/2020 to 24/05/2020
+System Production For Selected Period : 4.5MWh
+Title : -
+
+Plot 2 
+Legend Chenge
+Blue - Act Product
+Red - Losses due to Soiling
+X-Axis - May 20 to May 24 th
+Y Axis Range 150, 120, 90, 60, 30, 0
+Title : Lost System Production due to Soiling
+
+
+Plot 3 
+
+Y Axis - 1%, 2%. .... 5% (cleaning threshold)
+X-Axis - May 20 to May 24 th

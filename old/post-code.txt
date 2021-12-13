@@ -1,0 +1,34 @@
+<script>
+   
+   complete_btn = document.getElementById('form-complete-id')
+complete_btn.addEventListener('click', e => {
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyrFDzK-cSwyOQ2ByMNIu-bvhZBCytR1jLUr_H-GO9ywoNiVqk69wDD5Qrkphe7d7T9/exec"
+
+  // e.preventDefault()
+  // fetch(scriptURL, { method: 'POST', body: dictionary})
+  //   .then(response => console.log('Success!', response))
+  //   .catch(error => console.error('Error!', error.message))
+
+
+  
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbyrFDzK-cSwyOQ2ByMNIu-bvhZBCytR1jLUr_H-GO9ywoNiVqk69wDD5Qrkphe7d7T9/exec",
+    type: "post",
+    data: JSON.stringify(dictionary),
+    headers: {
+      "Content-Type": "text/plain",
+    },
+    processData: false,
+    complete: function (res, status) {
+      if (status == "success") {
+        console.log("success")
+      } else {
+        console.log("failed")
+        // options.showDataSavingError();
+      }
+    },
+  });
+
+});
+
+              </script>

@@ -1,0 +1,142 @@
+main_color {
+    color: #114ebc;
+  }
+  
+  #svd-survey-settings {
+    display: none;
+  }
+  
+  #view-title {
+    color: #114ebc;
+    font-size: 42px;
+    margin-left: 20px;
+    font-family: "Heebo";
+    font-weight: bold;
+  }
+  
+  .sv_main.sv_default_css input[type="button"]:hover,
+  .sv_default_css button:hover {
+    background-color: #3db3e6 !important;
+  }
+  
+  .svd_container
+    .svd_content
+    .svd_survey_designer
+    .svd_editors
+    .svd_questions_editor {
+    background-color: #aaaaaa !important;
+    padding: 18px 10px 5px 10px;
+  }
+  
+  .svd_container.sv_default_css .svd_editors {
+    border-left: 1px solid #ccc;
+    /*border-right: 1px solid #ccc;*/
+  }
+  
+  .svd_container.sv_default_css .nav-tabs {
+    background-color: white !important;
+  }
+  
+  #surveyjs {
+    background-color: #aaa;
+  }
+  
+  .sv_body {
+    border: none !important;
+    padding: 0.3em 1em !important;
+  }
+  
+  .svda-question-actions {
+    top: -38px !important;
+  }
+  
+  .svd_container.svd_container .svd-main-border-color {
+    border: 1px solid #eee;
+  }
+  
+  .sv_main .sv_container .sv_body .sv_p_root > .sv_row {
+    padding: 10px 0px !important;
+    margin: 10px 0px !important;
+    background-color: white !important;
+    border-radius: 5px;
+  }
+  
+  #surveyContainerInPopup .sv_main.sv_default_css .sv_body {
+    background: white !important;
+  }
+  
+  .sv_main.sv_default_css .sv_body {
+    background: transparent !important;
+  }
+  
+  .sv_main.sv_default_css {
+    background: transparent !important;
+  }
+  
+  .svd_container.sv_default_css #surveyjs .sv_row .svd_question {
+    background-color: #eee;
+    margin-top: 35px !important;
+  }
+  
+  .sv_row {
+    border-top: 1px dashed #ddd;
+    margin-top: 10px;
+  }
+  
+  .sv_main .sv_container .sv_body .sv_p_root > .sv_row {
+    background-color: #cecece;
+  }
+  
+  .svd_container .svd_commercial_container {
+    display: none;
+  }
+  
+  .modal-dialog {
+    min-width: 800px;
+  }
+  
+  .modal-dialog .modal-header {
+    background-color: #20b6ec;
+    color: white;
+  }
+  
+  .svd_container.sv_default_css .svd_properties {
+    background-color: #dcdcdc;
+    border: 1px solid #eee;
+  }
+  
+  .svd_container pages-editor .svd-page {
+    font-size: 14px;
+    background-color: #aaa;
+    color: #1f46da;
+  }
+  
+  .svd-property-grid__header .svd-property-grid__header-title {
+    font-size: 20px !important;
+    position: absolute !important;
+    right: 55px !important;
+    top: 8px;
+    left: unset;
+  }
+  
+  .svd_container .nav-item.active .nav-link {
+    background-color: #f4f4f4 !important;
+  }
+  
+  .svd_container.svd_container .editor-tabs > li > a:hover {
+    /*background: transparent !important;*/
+    font-weight: bold !important;
+  }
+  
+  .svd_toolbox {
+    border-right: 1px solid #ccc;
+  }
+  
+  .svd_container pages-editor .svd-page {
+    background-color: #aaa !important;
+    border-bottom: 3px solid rgb(255, 255, 255) !important;
+  }
+  .svd_container.svd_container .svd_selected_page {
+    border-bottom: none !important;
+  }
+  

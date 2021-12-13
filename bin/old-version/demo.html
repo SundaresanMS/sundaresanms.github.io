@@ -25,31 +25,31 @@
 </style>
 
 
+
+<script>
+
+
 function foo () { 
 
-  const val = document.getElementsByClassName('element-container css-1e5imcs e1tzin5v1')[3].children[0].contentDocument.body.getElementsByClassName('leaflet-pane leaflet-popup-pane')[0].innerText
-  const val2 = val.split("\n")
-  
-  
-  document.getElementsByClassName('element-container css-1e5imcs e1tzin5v1')[4].getElementsByTagName('input')[0].value = val2[0] +" , "+ val2[1]+"x"; 
-  
-  
-  if (val == "") {
-  
-  document.getElementsByClassName('element-container css-1e5imcs e1tzin5v1')[4].getElementsByTagName('input')[0].value = ""
-  }
-  
-  }
-  
-  setInterval(foo, 1000);
-  
-  
+const val = document.getElementsByClassName('element-container css-1e5imcs e1tzin5v1')[3].children[0].contentDocument.body.getElementsByClassName('leaflet-pane leaflet-popup-pane')[0].innerText
+const val2 = val.split("\n")
 
-<style>
+
+document.getElementsByClassName('element-container css-1e5imcs e1tzin5v1')[4].getElementsByTagName('input')[0].value = val2[0] +" , "+ val2[1]+"x"; 
+
+
+if (val == "") {
+
+document.getElementsByClassName('element-container css-1e5imcs e1tzin5v1')[4].getElementsByTagName('input')[0].value = ""
+}
+
+}
+
+setInterval(foo, 1000);
 
 
 
-</style>
+</script>
 </head>
 <body>
     <div class="container">

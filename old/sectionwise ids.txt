@@ -1,0 +1,65 @@
+
+
+step 1
+
+carousel_421f
+
+
+style="display:none;"
+
+step 2
+
+sec-5d3e
+
+
+step 3
+
+sec-3736
+
+step 4
+
+carousel_7e3f
+
+
+
+
+
+
+
+
+
+
+
+
+btn = document.getElementById('locate_id_button')
+
+btn.addEventListener("click", () => { 
+
+document.getElementById("carousel_421f").style.display = "none";
+document.getElementById("sec-5d3e").style.display = "";
+
+});
+
+
+btn2 = document.getElementById('map-next-btn')
+
+btn2.addEventListener("click", () => { 
+
+document.getElementById("carousel_421f").style.display = "none";
+document.getElementById("sec-5d3e").style.display = "none";
+document.getElementById("sec-3736").style.display = "";
+
+});
+
+
+
+btn3 = document.getElementById('electricity-details-btn')
+
+btn3.addEventListener("click", () => { 
+
+document.getElementById("carousel_421f").style.display = "none";
+document.getElementById("sec-5d3e").style.display = "none";
+document.getElementById("sec-3736").style.display = "none";
+document.getElementById("carousel_7e3f").style.display = "";
+
+});

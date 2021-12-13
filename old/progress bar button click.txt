@@ -1,0 +1,6 @@
+btn = document.getElementById('input_3')
+btn.click()
+
+order of clickable buttons
+
+4,3,2,1,0
