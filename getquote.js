@@ -141,6 +141,7 @@ const autocomplete = new google.maps.places.Autocomplete(input, options);
 
 
 const infowindow = new google.maps.InfoWindow();
+infowindow.close()
 
 const marker = new google.maps.Marker({
     map,
@@ -176,7 +177,7 @@ autocomplete.addListener("place_changed", () => {
     marker.setPosition(place.geometry.location);
     marker.setVisible(true);
     
-    infowindow.open(map, marker);
+    // infowindow.open(map, marker);
 
     document.getElementById('carousel_421f').style.display= 'none'
     document.getElementById('sec-5d3e').style.display= ''
@@ -189,6 +190,7 @@ autocomplete.addListener("place_changed", () => {
 
 const locationButton = document.getElementById("locate_id_button");
 const infoWindow = new google.maps.InfoWindow();
+
 locationButton.classList.add("locate_id_button");
 
 locationButton.addEventListener("click", () => {
@@ -205,7 +207,7 @@ locationButton.addEventListener("click", () => {
           };
           res = String(pos.lat + ", " + pos.lng);
           document.getElementById("pac-input").value =  res
-          infoWindow.setPosition(pos);
+          // infoWindow.setPosition(pos);
 
           // new google.maps.Marker({
           //   position: pos,
