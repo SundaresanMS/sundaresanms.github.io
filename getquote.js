@@ -124,15 +124,27 @@ const options = {
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(card);
 
 const residential_radio_btn = document.getElementById("residential-radio-btn");
+const business_radio_btn = document.getElementById("business-radio-btn");
 
 dictionary['establishment'] = 'business';
 residential_radio_btn.addEventListener("click", () => {
 
   dictionary['establishment'] = 'residential';
 
-  autocomplete.setTypes(['address'])
+  // autocomplete.setTypes(['address'])
 
 });
+
+
+
+residential_radio_btn.addEventListener("click", () => {
+
+  dictionary['establishment'] = 'business';
+
+  // autocomplete.setTypes(['address'])
+
+});
+
 
 
 const autocomplete = new google.maps.places.Autocomplete(input, options);
