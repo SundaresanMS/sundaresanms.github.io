@@ -137,7 +137,7 @@ residential_radio_btn.addEventListener("click", () => {
 
 
 
-residential_radio_btn.addEventListener("click", () => {
+business_radio_btn.addEventListener("click", () => {
 
   dictionary['establishment'] = 'business';
 
